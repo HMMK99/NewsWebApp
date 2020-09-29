@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+<h2>Edit</h2>
+<form action="" method="post">
+{% csrf_token %}
+<p>do you really want to delete this article?</p>
+<button class="btn btn-danger ml-2" type="submit">Confirm</button>
+</form>
+{% endblock content %}

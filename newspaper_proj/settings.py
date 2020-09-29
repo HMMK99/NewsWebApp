@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'users.apps.UsersConfig',
+    'articles.apps.ArticlesConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -131,3 +132,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+TIME_ZONE = 'Africa/Cairo'
